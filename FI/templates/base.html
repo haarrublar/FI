@@ -6,8 +6,14 @@
 	<title>
 		{% block head_title %} FI Board {% endblock %}
 	</title>
+
+	{% include 'head/css.html' %}
 </head>
 <body>
+
+	<header class="sticky top-0 z-999 flex w-full bg-white drop-shadow-1 dark:bg-boxdark dark:drop-shadow-none">
+		{% include 'pages/header.html' %}
+	</header>
 	<div>
 		{% block content %}{% endblock %}
 	</div>
