@@ -54,7 +54,7 @@ ROOT_URLCONF = 'FI.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,7 +119,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
 	BASE_DIR / 'static'
 ]
-STATIC_ROOT = BASE_DIR / 'local-media' / 'static'
+STATIC_ROOT = BASE_DIR.parent / 'local-media' / 'static'
 
 
 # Default primary key field type

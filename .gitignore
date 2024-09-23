@@ -1,0 +1,12 @@
+local-media/
+
+#logs
+logs*.logs
+
+
+# cache
+__pycache__
+
+
+#npm
+node_modules/
