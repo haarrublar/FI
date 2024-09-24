@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+.mobile-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: black;
+	height: 100vh;
+}
+
+@media (min-width: 640px) {
+	.mobile-menu {
+	    width: 25%;
+	}
+}
